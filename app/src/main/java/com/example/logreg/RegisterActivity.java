@@ -47,17 +47,8 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Töltse ki az összes mezőt", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    try {
-                        if (adatbazis.rogzites(email,felhnev,jelszo,teljesnev)){
-                            Toast.makeText(getApplicationContext(), "Sikeres regisztráció", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
-                            Toast.makeText(getApplicationContext(), "Sikertelen regisztráció", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    catch (NumberFormatException ex){
-                        Toast.makeText(getApplicationContext(), "Minden mező kitöltése kötelező", Toast.LENGTH_SHORT).show();
-                    }
+                    adatbazis.rogzites(email,felhnev,jelszo,teljesnev);
+                    Toast.makeText(getApplicationContext(), "Sikeres regisztráció", Toast.LENGTH_SHORT).show();
                 }
 
             }

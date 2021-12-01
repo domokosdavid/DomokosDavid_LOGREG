@@ -26,7 +26,7 @@ public class DBHelper  extends SQLiteOpenHelper {
                 COL_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COL_EMAIL+ " TEXT NOT NULL, " +
                 COL_FELHNEV+ " TEXT NOT NULL, " +
-                COL_JELSZO+ " TEXT NOT NULL " +
+                COL_JELSZO+ " TEXT NOT NULL," +
                 COL_TELJESNEV+ " TEXT NOT NULL " +
                 ");";
         db.execSQL(sql);
