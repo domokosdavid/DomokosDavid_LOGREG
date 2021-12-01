@@ -10,12 +10,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Felhasználónév"/>
+        android:hint="Felhasználónév"
+        android:id="@+id/log_felhnev"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Jelszó"/>
+        android:hint="Jelszó"
+        android:id="@+id/log_jelszo"/>
 
     <Button
         android:layout_width="match_parent"
